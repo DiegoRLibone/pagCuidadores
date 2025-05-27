@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+.saudeContainer {
+  position: relative;
+  height: 100vh;
+  background: url('../images/homesaude.jpg') no-repeat center center;
+  background-size: cover;
+  font-family: 'DM Sans', sans-serif;
+  color: #333;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saudeConteudo {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+}
+
+.saudeCabecalho {
+  text-align: left;
+  margin-top: 100px;
+}
+
+.saudeCabecalho h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.saudeCabecalho h2 {
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.saudeCabecalho p {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.saudeBotao {
+  background-color: #2AA8FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.saudeBotao a {
+  text-decoration: none;
+  color: white;
+}
+
+.saudeBotao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 57, 126, 0.3);
+}
+
+.saudeCardUnico {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.saudeItemEstatistica {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.saudeItemContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.saudeDivisoria {
+  width: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+}
+
+.saudeIconeEstatistica {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.saudeItemEstatistica p {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  .saudeCabecalho {
+    margin-top: 50px;
+  }
+  
+  .saudeCardUnico {
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 30px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .saudeDivisoria {
+    display: none;
+  }
+
+  .saudeItemContent{
+    display: none;
+  }
+}
+
+/* Mobile (até 767px) */
+@media (max-width: 767px) {
+  .saudeCabecalho h1 {
+    font-size: 20px;
+  }
+  
+  .saudeCabecalho h2 {
+    font-size: 36px;
+  }
+  
+  .saudeCabecalho p {
+    font-size: 18px;
+  }
+
+  .saudeItemContent{
+    display: none;
+  }
+  
+  .saudeBotao {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  
+  .saudeCardUnico {
+    margin-top: 100px;
+  }
+  
+  .saudeItemEstatistica {
+    padding: 20px;
+  }
+  
+  .saudeItemEstatistica p {
+    font-size: 16px;
+  }
+  
+  .saudeIconeEstatistica {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .saudeCabecalho {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .saudeCabecalho {
+    text-align: center;
+  }
+}

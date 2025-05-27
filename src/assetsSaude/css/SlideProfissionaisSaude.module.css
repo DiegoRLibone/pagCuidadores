@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Container principal */
+.saudeContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.saudeContent {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Título principal */
+.saudeTitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+/* Container do slider */
+.saudeSlider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+/* Botões de navegação */
+.saudeNavButton {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.saudeNavButton:hover {
+  background: #2AA8FF;
+  color: white;
+  border-color: #2AA8FF;
+  transform: scale(1.1);
+}
+
+/* Container dos cards */
+.saudeCards {
+  display: flex;
+  gap: 32px;
+  flex: 1;
+  justify-content: center;
+  max-width: 900px;
+}
+
+/* Card individual */
+.saudeCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 24px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  flex: 1;
+  max-width: 280px;
+  min-height: 320px;
+  border: 1px solid #f1f5f9;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.saudeCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2AA8FF, #06b6d4);
+}
+
+.saudeCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+}
+
+/* Container do ícone */
+.saudeIconContainer {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  transition: all 0.3s ease;
+}
+
+.saudeCard:hover .saudeIconContainer {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #2AA8FF 0%, #1d8dd6 100%);
+}
+
+/* Ícone */
+.saudeIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.saudeCard:hover .saudeIcon {
+  filter: brightness(0) invert(1);
+}
+
+/* Título do card */
+.saudeCardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 16px;
+  line-height: 1.3;
+  min-height: 26px;
+}
+
+/* Descrição do card */
+.saudeCardDescription {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Link do card */
+.saudeCardButton {
+  background: transparent;
+  border: 2px solid #2AA8FF;
+  color: #2AA8FF;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.saudeCardButton:hover {
+  background: #2AA8FF;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Indicadores (dots) */
+.saudeDots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.saudeDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #cbd5e1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.saudeDot:hover {
+  background: #94a3b8;
+  transform: scale(1.2);
+}
+
+.saudeDotActive {
+  background: #2AA8FF;
+  transform: scale(1.3);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .saudeContainer {
+    padding: 24px;
+  }
+
+  .saudeTitle {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .saudeCards {
+    gap: 24px;
+  }
+
+  .saudeCard {
+    padding: 24px 16px;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .saudeContainer {
+    padding: 16px;
+  }
+
+  .saudeTitle {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .saudeSlider {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 8px; 
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto;
+  }
+
+  .saudeNavButton {
+    display: flex; 
+    width: 40px; 
+    height: 40px;
+    font-size: 20px;
+    position: static; 
+  }
+
+  .saudeCards {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 280px; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+  }
+
+  .saudeCard {
+    flex: 0 0 100%; 
+    max-width: 100%;
+    min-width: 100%;
+    scroll-snap-align: center;
+    padding: 24px 16px;
+    min-height: 300px;
+  }
+
+  .saudeIconContainer {
+    width: 70px;
+    height: 70px;
+  }
+
+  .saudeIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .saudeCardTitle {
+    font-size: 18px;
+  }
+
+  .saudeCardDescription {
+    font-size: 13px;
+    min-height: 52px;
+  }
+}
+
+@media (max-width: 480px) {
+  .saudeTitle {
+    font-size: 24px;
+  }
+
+  .saudeCard {
+    padding: 20px 16px;
+    min-height: 260px;
+  }
+
+  .saudeCardButton {
+    font-size: 12px;
+    padding: 10px 20px;
+    height: 40px;
+  }
+
+  .saudeSlider {
+    gap: 4px; 
+  }
+
+  .saudeNavButton {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}

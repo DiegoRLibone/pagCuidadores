@@ -1,0 +1,87 @@
+.caixacelular{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.divcelular{
+    width: 30%;
+    height: 200px;
+    background: linear-gradient(to bottom, #2AA8FF, #FFFFFF);
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+    margin-top: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+.divcelular img{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+
+.divcelular p{
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px){
+    .divcelular{
+        display: block;
+        width: 30%;
+        height: 300px;
+    }
+
+    .divcelular img{
+        width: 80px;
+        height: 80px;
+        margin-top: 22%;
+    }
+
+    .divcelular p{
+        font-size: 23px;
+    }
+
+    .caixacelular{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Mobile (até 767px) */
+@media (max-width: 767px) {
+    .divcelular{
+        display: block;
+        width: 100%;
+        height: 120px;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .divcelular img{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .divcelular p{
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .caixacelular{
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+}
