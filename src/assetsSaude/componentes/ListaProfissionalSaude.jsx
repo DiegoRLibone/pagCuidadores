@@ -86,7 +86,7 @@ function NossosProfissionais() {
       avaliacao: 4.8,
       telefone: '(11) 97777-7777',
       email: 'ana.lima@email.com',
-      foto: 'https://images.unsplash.com/photo-1594824388347-9669c5f5ad70?w=150&h=150&fit=crop&crop=face',
+      foto: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face',
       valorConsulta: 'R$ 140,00',
       tipoAtendimento: 'Presencial e Online',
       localAtendimento: 'Centro de Aprendizagem Especializada - Moema',
