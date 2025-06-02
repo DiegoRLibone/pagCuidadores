@@ -11,9 +11,14 @@ function HomeSaude() {
           <h1>BOAS-VINDAS A SAÚDE ACENIS !</h1>
           <h2>Cuidado especializado para pessoas<br />com síndrome de Down</h2>
           <p>Profissionais preparados para apoiar cada fase da jornada.</p>
-          <button className={Styles.saudeBotao}> <a href="#servicosSaude"> Saiba mais </a></button>
+          <button className={Styles.saudeBotao}> 
+            <a href="#servicosSaude"> Saiba mais </a>
+          </button>
         </header>
+      </div>
 
+      {/* Estatística agora fora do verdeSaudeConteudo */}
+      <div className={Styles.EstatisticaContainer}>
         <div className={Styles.saudeCardUnico}>
           <div className={Styles.saudeItemEstatistica}>
             <div className={Styles.saudeItemContent}>
@@ -21,7 +26,7 @@ function HomeSaude() {
               <p>+3.500<br />Pacientes atendidos</p>
             </div>
           </div>
-          
+            
           <div className={Styles.saudeDivisoria}></div>
           
           <div className={Styles.saudeItemEstatistica}>

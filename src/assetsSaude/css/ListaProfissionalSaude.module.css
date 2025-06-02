@@ -1,9 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
 .container-principal {
-  font-family: 'DM Sans', sans-serif;
   min-height: 100vh;
   background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 50%, #faf5ff 100%);
+  font-family: "Baloo Tamma";
+
+    & h1{
+        font-family: "Baloo Tamma";
+    }
+    & h2{
+        font-family: "Baloo Tamma";
+    }
+    & a{
+        font-family: "Baloo Tamma";
+    }
+    & p{
+        font-family: "Nunito";
+    }
+    button{
+        font-family: "Baloo Tamma";
+    }
 }
 
 .container-conteudo {
@@ -28,7 +42,7 @@
   background-clip: text;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .titulo-principal {
     font-size: 3.5rem;
   }
@@ -40,6 +54,7 @@
   max-width: 48rem;
   margin: 0 auto;
   line-height: 1.75;
+  font-family: "nunito";
 }
 
 /* Filtros */
@@ -121,6 +136,8 @@
   font-weight: 500;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: all 0.2s;
+  font-family: "Baloo Tamma";
+  font-size: small;
 }
 
 .btn-buscar:hover {
