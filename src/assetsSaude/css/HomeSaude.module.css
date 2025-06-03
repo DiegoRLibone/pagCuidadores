@@ -149,6 +149,7 @@
 @media (max-width: 1024px) {
   .saudeCabecalho {
     margin-top: 50px;
+    text-align: center;
   }
   
   .saudeCardUnico {
