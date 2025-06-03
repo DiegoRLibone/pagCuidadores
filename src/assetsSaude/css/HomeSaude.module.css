@@ -149,6 +149,7 @@
 @media (max-width: 1024px) {
   .saudeCabecalho {
     margin-top: 50px;
+    text-align: left;
   }
   
   .saudeCardUnico {
@@ -170,16 +171,16 @@
 
 /* Mobile (até 767px) */
 @media (max-width: 767px) {
-  .saudeCabecalho h1 {
-    font-size: 20px;
-  }
-  
-  .saudeCabecalho h2 {
+  .saudeCabecalho {
+    & h1{
+      font-size: 20px;
+    }
+    & h2 {
     font-size: 36px;
-  }
-  
-  .saudeCabecalho p {
-    font-size: 18px;
+    }
+    & p{
+      font-size: 18px;
+    }
   }
 
   .saudeItemContent{
