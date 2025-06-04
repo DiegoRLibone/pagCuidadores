@@ -90,7 +90,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #374151;
 }
@@ -115,6 +115,7 @@
   border-radius: 0.5rem;
   background: #f9fafb;
   transition: all 0.2s;
+  font-size: 0.9rem;
 }
 
 .filtro-select:focus {
@@ -137,7 +138,7 @@
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: all 0.2s;
   font-family: "Baloo Tamma";
-  font-size: small;
+  font-size: 1rem;
 }
 
 .btn-buscar:hover {
@@ -299,12 +300,12 @@
   border: none;
   cursor: pointer;
   font-weight: 500;
+  font-size: 1rem;
   transition: all 0.2s;
   text-align: center;
 }
 
 .btn-ver-info:hover {
-  background: #2AA8FF;
   transform: translateY(-1px);
 }
 
