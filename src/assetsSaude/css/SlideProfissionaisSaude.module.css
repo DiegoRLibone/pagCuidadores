@@ -270,6 +270,8 @@
     width: 40px; 
     height: 40px;
     font-size: 20px;
+    padding: auto;
+    margin-bottom: 20px;
     position: static; 
   }
 
@@ -319,7 +321,7 @@
 
   .saudeCard {
     padding: 20px 16px;
-    min-height: 260px;
+    min-height: 200px;
   }
 
   .saudeCardButton {
@@ -329,12 +331,14 @@
   }
 
   .saudeSlider {
-    gap: 4px; 
+    gap: 3px; 
+    margin: 0;
   }
 
   .saudeNavButton {
-    width: 36px;
-    height: 36px;
-    font-size: 18px;
+    width: 42px;
+    height: 42px;
+    font-size:24px;
+    text-align: center;
   }
 }
